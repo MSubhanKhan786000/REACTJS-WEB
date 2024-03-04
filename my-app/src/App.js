@@ -1,40 +1,16 @@
-// * function based components
-import React, { useState } from "react";
 import "./App.css";
+import { Header } from "./components/Header";
+import { TaskList } from "./components/TaskList";
 
-const App = () => {
-  const [count, setCount] = useState(0);
-  function handleAdd() {
-    // suppose we want to add the count+3 we can achieve this be adding the function not by repeating the state like below
-    setCount(count => count + 1);
-    setCount(count => count + 1);
-    setCount(count => count + 1);
-    // In short, state value will be constant unless we try to update it using function
-  }
-  function handleSub() {
-    setCount(count - 1);
-    console.log(count);
-  }
-  const handleReset = () => {
-    setCount(0);
-  };
+function App() {
+  const info = "This is prop drilling";
   return (
     <div className="App">
-      <div className="box">
-        <p>{count}</p>
-        <button onClick={handleAdd} className="add">
-          Add
-        </button>
-        <button onClick={handleSub} className="sub">
-          Sub
-        </button>
-        <button onClick={handleReset} className="reset">
-          Reset
-        </button>
-      </div>
+      <Header />
+      <TaskList info={info} />
     </div>
   );
-};
+}
 
 export default App;
 

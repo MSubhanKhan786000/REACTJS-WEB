@@ -73,3 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- 1) How to create multiple components adn use them inside the app -->
 <!-- 2) How to add image in any component(using the inline dynamic content --- {}) -->
 <!-- 3) How to add the styling to these components and image -->
+
+<!-- Video 4_3 -->
+<!-- 1. How to create individual children -->
+<!-- 2. How to create independent individual state of each component -->
+<!-- 3. how to utilize ternary operator and "hidden" to hide things -->
+
+<!-- Video 4_4 (prop drilling)-->
+
+<!-- Video 5_1 (Styling)-->
